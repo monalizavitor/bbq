@@ -12,10 +12,11 @@ function calc() {
     let amountbeer = beer(eventDuration) * amountAdults
     let amountdrink = drink(eventDuration) * amountAdults + (drink(eventDuration) / 2 * amountChildren)
 
+    result.style.backgroundColor
     result.innerHTML = `<p><strong>Sua média de consumo será:</strong></p>`
-    result.innerHTML += `<p><strong>${amountMeat}g de carne</strong></p>`
-    result.innerHTML += `<p><strong>${amountbeer}ml de cerveja</strong></p>`
-    result.innerHTML += `<p><strong>${amountdrink}ml de água ou refrigerante</strong></p>`
+    result.innerHTML += `<p><strong>${amountMeat / 1000} kg de carne</strong></p>`
+    result.innerHTML += `<p><strong>${amountbeer / 1000} l de cerveja</strong></p>`
+    result.innerHTML += `<p><strong>${amountdrink / 1000} l de água ou refrigerante</strong></p>`
 
 }
 
